@@ -14,7 +14,7 @@
       state: started
     when: ansible_os_family == "Debian" 
      
-  - name: install webserver(httpd) on amazonlinux2 node2
+  - name: install httpd on amazonlinux2 node2
     yum: 
      name: webserver(httpd)
      state: present
